@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Bitter:wght@600;900&family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+.header-sec {
+    text-align: center;
+    align-items: center;
+    margin-top: 1rem;
+    border-bottom: 1px solid #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.heads-name{
+    display: flex;
+    flex-direction: row;
+    padding:0rem 0rem 1rem 3rem;
+    gap:1.3rem;
+}
+.head-icon img{
+    width:50px;
+    height:50px;
+    padding-top:.6rem;
+}
+.head-name{
+    font-family: 'Protest Revolution', sans-serif;
+    font-size:14px;
+}
+
+
+.main-sec{
+    background: linear-gradient(rgba(55, 68, 4, 0.356), rgba(0, 0, 0, 0.926)),
+                url("./../image/potato.webp");
+    height: 81.2vh; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    margin-bottom:1rem;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.button-image{
+    display:flex;
+    flex-direction: column;
+    gap:.4rem;
+}
+ 
+  /* Drop Image Section */
+.drop-image {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 7rem 3rem 0rem 3.5rem;
+  padding: 3rem;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.dropzone-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #dafd71;
+  border-radius: 15px;
+  padding: 2rem;
+  transition: border-color 0.3s ease;
+}
+
+.dropzone-container p {
+  margin-top: 1rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.image-preview-container {
+  padding-left: 15px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-preview {
+  width: 70%;
+  height: 30%;
+  border-radius: 15px;
+}
+
+  .clear-button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom:3.2rem;
+  }
+  .clear-button {
+    background-color: #8af956f6;
+    color: black;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    padding: 13px 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  /* Prediction Section */
+  .Prediction {
+    margin: 6rem 10rem 4rem 0rem;
+  }
+  
+  .prediction-container {
+    background-color: #ffffffd3;
+    height: auto; 
+    border-radius: 10px;
+    width:100%;
+    height: 32vh;
+    padding: 30px;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .prediction-container h2 {
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  .prediction-container p {
+    color: #202020;
+    line-height: 1.6;
+    font-size: 1.3rem;
+    font-weight:600;
+  }
+ 
+  /* Adjustments for screens wider than 1064px */
+  @media screen and (max-width:1024px)  {
+  .header-sec{
+    max-width:100%;
+  }
+    .head-name{
+      gap:.3rem;
+      padding:0;
+      margin-right:2rem;
+      align-items: left;
+  
+    }
+  .head-name h1{
+    font-size:21px;
+    padding-top:.2rem;
+  }
+  .head-icon img{
+    width:40px;
+    height:40px;
+    padding-left:1rem;
+  }
+  .main-sec{
+    flex-direction: column;
+    max-width:100%;
+    height:88vh;
+  }
+  .drop-image{
+    flex-direction: column;
+    margin: 7rem 1.5rem 2rem 1.5rem;
+    border-radius: 15px;
+  }
+  .dropzone-container{
+    border:none;
+  }
+  .dropzone-container p{
+    font-size:19px;
+  }
+  .dropzone-container span{
+    display: none;
+  }
+  .Prediction{
+    margin:.8rem 2.4rem 0rem 2.4rem;
+  }
+  .prediction-container{
+    margin-bottom:4rem;
+    padding:3px 3px 2px 3px;
+  }
+  
+}
