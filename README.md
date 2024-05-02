@@ -13,21 +13,21 @@
 # Project Structure
 - The project is organized into the following folders and files:
 
-##### api: Contains the backend API files.
+#### api: Contains the backend API files.
 - main.py: Main FastAPI application file.
 - model_pickle: Folder containing the pickled model files.
 - potatoes.h5: Deep learning model file.
 - requirements.txt: File listing the Python dependencies.
-##### potato-frontend: Contains the frontend React.js files.
-##### Untitled.ipynb: Jupyter notebook containing the deep learning model development code.
+#### potato-frontend: Contains the frontend React.js files.
+#### Untitled.ipynb: Jupyter notebook containing the deep learning model development code.
   
 # How to Run
 - Clone the repository: git clone https://github.com/harshitadhikari-1122/Potato_Classification-app.git
-##### Set up the backend:
+#### Set up the backend:
 - Navigate to the api folder.
 - Install dependencies: pip install -r requirements.txt
 - Run the FastAPI server: uvicorn main:app --reload
-##### Set up the frontend:
+#### Set up the frontend:
 - Navigate to the potato-frontend folder.
 - Install dependencies: npm install
 - Start the React development server: npm start
